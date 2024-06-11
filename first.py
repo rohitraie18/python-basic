@@ -231,19 +231,43 @@ b=2.2
 sum=a+b #2.0+2.2 =4.2
 print(sum)
 
-#error
-a="2"
-b=2.2
-sum=a+b #incorrect 
+
 
 #type casting
-a=int("2")
+a=int("2") 
 b=4.25
 print(type(a))
 print(a+b)
 
-a=2
-b=3
+a=10.2 #long
+b="5"
+c=int(b)
+print(a+c)
+
+a=10.2 #short
+b=int("5")
 print(a+b)
 
-print("helloooo")
+#Input in python
+#input("Type your name:")
+name=input("Type your name :")
+print("Hello!!!", name)
+
+""""
+a=input("Enter your mobile number:")
+print("Your contact number is :",a)
+"""
+
+
+b=int(input(":")) #for interger
+print("hhh",b)
+
+a=float(input("Enter:")) #for float
+print(":",a)
+
+name=input("Enter your name:")
+age=int(input("Enter your age :"))
+marks=float(input("Enter your marks :"))
+print("Your name :",name)
+print("Your age is :", age)
+print("Your marks is :", marks)
