@@ -224,3 +224,26 @@ b=60
 print(":", a!=b and a==b)
 print(":", not(a==b))
 print(":", a>b or a<b)
+
+#type conversion
+a=2
+b=2.2
+sum=a+b #2.0+2.2 =4.2
+print(sum)
+
+#error
+a="2"
+b=2.2
+sum=a+b #incorrect 
+
+#type casting
+a=int("2")
+b=4.25
+print(type(a))
+print(a+b)
+
+a=2
+b=3
+print(a+b)
+
+print("helloooo")
