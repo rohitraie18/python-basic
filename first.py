@@ -172,10 +172,23 @@ num=20
 num=10
 print("num :",num)  #output : 10
 
-a=2
-b=2
-print(a+b)
 
+#logical operators: (not , and , or)
+#not
+print(not True)
+print(not False)
 
+a=20
+b=10
+print(not (a>b)) 
+print(not(a<b))
 
-print("solukhumbu")
+#and
+a=False
+b=False
+print("and operators:", a and b)
+
+#or
+a=True
+b=False
+print("or operators:", a or b) 
