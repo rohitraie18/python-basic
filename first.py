@@ -192,3 +192,35 @@ print("and operators:", a and b)
 a=True
 b=False
 print("or operators:", a or b) 
+
+a=50
+b=20
+print(":", a>=b and a>b)
+
+val1=20
+val2=30
+print(":", val1!=val2 or val1==val2)
+
+val1=True 
+val2=False
+print(":", val1 or val2)
+
+a=100
+b=100
+print(":", a==b and a!=b)
+
+a=100
+b=100
+print(":", a==b or a!=b)
+
+print(":", not True)
+
+a=100
+b=110
+print(":", not(a!=b))
+
+a=50
+b=60
+print(":", a!=b and a==b)
+print(":", not(a==b))
+print(":", a>b or a<b)
