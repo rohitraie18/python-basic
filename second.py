@@ -45,3 +45,8 @@ print(str[:5]) #[0:5]
 a="Apple"
 print(a[-4 : -2]) 
  
+ #string function
+ str = " I am a coder"
+print(str.endswith("er"))
+
+print("hhh")
