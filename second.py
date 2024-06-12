@@ -34,3 +34,14 @@ chr = str[6]       #print(str[6])
 print(chr)
 
 #slicing
+str = "Helloworld"
+a = str[1 : 5]
+print(a)
+print(str[5: 11]) #print(str[5: len(str)])  print(str[5:])
+print(str[5:])
+print(str[:5]) #[0:5]
+
+#negative index
+a="Apple"
+print(a[-4 : -2]) 
+ 
