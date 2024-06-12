@@ -45,8 +45,10 @@ print(str[:5]) #[0:5]
 a="Apple"
 print(a[-4 : -2]) 
  
- #string function
- str = "I am a coder"
-print(str.endswith("er"))
-
-print("hhh")
+#string function
+a ="i am a coder am."  
+print(a.endswith("der."))
+print(a.capitalize())
+print(a.replace("coder","student"))
+print(a.find("m"))
+print(a.count("am"))

@@ -1,13 +1,5 @@
-name=input("Enter name :")
-age=int(input("Enter age :"))
-clas=int(input("Enter class level :"))
-rollno=int(input("Enter roll no :"))
-add=input("Enter address :")
-marks=float(input("Enter marks :"))
-print("name :", name)
-print("age :", age)
-print("class :", clas)
-print("roll no :", rollno)
-print("address :", add)
-print("marks :", marks)
 
+
+a=2
+b=3
+print(a+b)
