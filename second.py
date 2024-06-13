@@ -53,7 +53,15 @@ print(a.replace("coder","student"))
 print(a.find("m"))
 print(a.count("am"))
 
-#5 WAP to input users first name and print its length.
-name=input("Enter name:")
-len1=len(name)
-print(len1)
+#conditional statements (if, elif, else)
+age=18
+if(age >= 18):
+    print("can vote")
+
+age=int(input("Enter age :"))
+if(age>=18):
+    print("can vote")
+elif(age<18):
+    print("not eligible")
+
+

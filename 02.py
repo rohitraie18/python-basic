@@ -1,2 +1,5 @@
-sentence="Hi I an $ a student $ hellow my $ friend $ We are $ a friend"
-print("count number is :", sentence.count("$"))
+age = int(input("Enter age: "))
+if (age >= 18):
+    print("can vote")
+else:
+    print("not eligible")
