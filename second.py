@@ -54,7 +54,7 @@ print(a.find("m"))
 print(a.count("am"))
 
 #conditional statements (if, elif, else)
-age=18
+"""age=18
 if(age >= 18):
     print("can vote")
 
@@ -63,5 +63,40 @@ if(age>=18):
     print("can vote")
 elif(age<18):
     print("not eligible")
+"""
+"""
+ #result in greading system
+marks=float(input("Enter your marks :"))
+if(marks >=90 and marks <=100):
+   print("Your grade is: A+")
+
+elif(marks >=80 and marks <90):
+   print("Your grade is : A")
+
+elif(marks >=70 and marks <80):
+   print("Your grade is : B+")
+
+elif(marks >=60 and marks <70):
+   print("Your grade is : B")
+
+elif(marks >=50 and marks <60):
+   print("Your grade is : C+")
+
+elif(marks >=40 and marks <50):
+   print("Your grade is : C")
+
+elif(marks >=30 and marks <40):
+   print("Your grade is : D+")
+
+elif(marks <30):
+    print("Your grade is : NG")
+"""
 
 
+age=int(input("Enter your age :"))
+if(age>=18):
+   print("Can vote.")
+   if(age>=70):
+      print("Not possible.")
+elif(age<18):
+   print("Not eligible")
