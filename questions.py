@@ -21,3 +21,7 @@ print("Total average=", average)
 a=int(input("Enter 1st num:"))
 b=int(input("Enter 2nd num:"))
 print(a>=b )
+
+#5WAP to find the occurrence of '$' in a string.
+sentence="Hi I an $ a student $ hellow my $ friend $ We are $ a friend"
+print("count number is :", sentence.count("$"))
