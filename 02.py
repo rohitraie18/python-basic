@@ -1,5 +1,3 @@
-
-
-a=2
-b=3
-print(a+b)
+name=input("Enter name:")
+len1=len(name)
+print(len1)

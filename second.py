@@ -52,3 +52,8 @@ print(a.capitalize())
 print(a.replace("coder","student"))
 print(a.find("m"))
 print(a.count("am"))
+
+#5 WAP to input users first name and print its length.
+name=input("Enter name:")
+len1=len(name)
+print(len1)
