@@ -1,3 +1,4 @@
+'''
 marks=float(input("Enter your exam marks :"))
 if(marks>=40):
     print("congratulations you are pass!!")
@@ -5,4 +6,11 @@ if(marks>=40):
         print("Not possible!!")
 elif(marks<40):
     print("Sorry You are fail!!!")
+    '''
+
+
+sen=input("Ente r name:")
+a=len(sen)
+print(a)
+
 
