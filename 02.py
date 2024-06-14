@@ -1,16 +1,8 @@
- """
-age=int(input("Enter your age:"))
-
-# Outer conditional
-if (age>=18):
-    print("can vote.")
-    
-    # Nested conditional
-    if (age >=75):
-        print("not possible.")
-    #else:
-       # print("The number is odd.")
-else:
-    print("not eligible.") 
-    """
+marks=float(input("Enter your exam marks :"))
+if(marks>=40):
+    print("congratulations you are pass!!")
+    if(marks>100):
+        print("Not possible!!")
+elif(marks<40):
+    print("Sorry You are fail!!!")
 

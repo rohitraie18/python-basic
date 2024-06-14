@@ -30,3 +30,13 @@ print(len1)
 #6 WAP to find the occurrence of '$' in a string.
 sentence="Hi I an $ a student $ hellow my $ friend $ We are $ a friend"
 print("count number is :", sentence.count("$"))
+
+#7 Input marks and print they are pass or fail using conditional statements.
+marks=float(input("Enter your exam marks :"))
+if(marks>=40):
+    print("congratulations you are pass!!")
+    if(marks>100):
+        print("Not possible!!")
+elif(marks<40):
+    print("Sorry You are fail!!!")
+

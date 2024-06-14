@@ -92,7 +92,7 @@ elif(marks <30):
     print("Your grade is : NG")
 """
 
-
+"""
 age=int(input("Enter your age :"))
 if(age>=18):
    print("Can vote.")
@@ -100,3 +100,17 @@ if(age>=18):
       print("Not possible.")
 elif(age<18):
    print("Not eligible")
+"""
+
+
+age=int(input("Enter your age :"))
+
+if(age >=18):
+      print("can vote and drive")
+
+      if(age >=70):
+         print("Not possible")
+
+elif(age <18):
+    print("Not eligible!!")
+
