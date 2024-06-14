@@ -40,3 +40,29 @@ if(marks>=40):
 elif(marks<40):
     print("Sorry You are fail!!!")
 
+#8 WAP to check if a number entered by the user is odd or even.
+number=float(input("Enter ant number :"))
+if(number %2==0):
+    print("This number is even")
+else:
+    print("This number is odd")
+
+# WAP to check if a number entered by the user is odd or even or positive or negative.
+num=int(input("Enter any number :"))
+
+if(num>0):
+    print("This number is positive")
+    if(num %2==0):
+        print("This number is even")
+    else:
+        print("This number is odd")
+
+elif(num<0):
+    print("This number is negative")
+    if(num%2==0):
+        print("This number is even")
+    else:
+        print("This number is odd")
+
+else:
+    print("This number is zero")
