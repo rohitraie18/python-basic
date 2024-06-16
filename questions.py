@@ -47,7 +47,7 @@ if(number %2==0):
 else:
     print("This number is odd")
 
-# WAP to check if a number entered by the user is odd or even or positive or negative.
+#9 WAP to check if a number entered by the user is odd or even or positive or negative.
 num=int(input("Enter any number :"))
 
 if(num>0):
@@ -66,3 +66,20 @@ elif(num<0):
 
 else:
     print("This number is zero")
+#10 WAP to find the greatest of 3 numbers entered by the user.
+a=int(input("Enter 1st number :"))
+b=int(input("Enter 2nd number :"))
+c=int(input("Enter 3rd number :"))
+
+if(a>b and a>c):
+    print(a,"is greater number")
+
+elif(b>a and b>c):
+    print(b,"is greater number")
+
+elif(c>a and c>b):
+    print(c,"is greater number")
+
+#11 WAP to check if a number is a multiple of 7 or not.
+
+

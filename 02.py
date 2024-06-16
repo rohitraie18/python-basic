@@ -1,39 +1,7 @@
-"""
-num=int(input("Enter any number :"))
+a=int(input("Enter any number :"))
 
-if(num %2==0):
-    print("This number is even")
-    if(num>0):
-        print("This number is positive")
-    elif(num<0):
-           print("This number is negative")
-
-elif(num %2!=0):
-    print("This number is odd")
-    if(num>0):
-        print("This number is positive")
-    elif(num<0):
-        print("This number is negative")
-    
-else:
-     print("This number is zero")
-     """
-
-num=int(input("Enter any number :"))
-
-if(num>0):
-    print("This number is positive")
-    if(num %2==0):
-        print("This number is even")
-    else:
-        print("This number is odd")
-
-elif(num<0):
-    print("This number is negative")
-    if(num%2==0):
-        print("This number is even")
-    else:
-        print("This number is odd")
+if(a%7==0):
+    print("This number is multiple of 7")
 
 else:
-    print("This number is zero")
+    print("This number is not multiple of 7")
