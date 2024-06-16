@@ -81,5 +81,11 @@ elif(c>a and c>b):
     print(c,"is greater number")
 
 #11 WAP to check if a number is a multiple of 7 or not.
+a=int(input("Enter any number :"))
 
+if(a%7==0):
+    print("This number is multiple of 7")
+
+else:
+    print("This number is not multiple of 7")
 
