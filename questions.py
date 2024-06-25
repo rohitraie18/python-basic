@@ -89,3 +89,4 @@ if(a%7==0):
 else:
     print("This number is not multiple of 7")
 
+#12 WAP to ask the user to enter names of their 3 favorite movies & store them in a list.
