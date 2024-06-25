@@ -46,7 +46,21 @@ print(a)
 
 #list.remove(1)  #remove  [2,3]
 
-list.pop(0)  #delete  [1,3]
-print(list)
+#list.pop(0)  #delete  [1,3]
+#print(list)
 
-list.
+#Tuples in python
+'''
+tup=(2,1,3)
+print(tup[0])
+print(tup[1])
+print(tup[2])
+print(tup[0:])
+'''
+#Tuples Methods
+a=(2,1,3,1,5,5,5,5)
+print(a.index(1))
+print(a.index(3))
+
+print(a.count(1))
+print(a.count(5))
