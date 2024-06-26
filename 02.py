@@ -1,7 +1,9 @@
-a=int(input("Enter any number :"))
+list=[1,2,1]
+a=list.copy()
+a.reverse()
 
-if(a%7==0):
-    print("This number is multiple of 7")
+if(list==a):
+    print("Palindrome")
 
 else:
-    print("This number is not multiple of 7")
+    print("Not Palindrome") 
