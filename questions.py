@@ -106,3 +106,28 @@ movies.append(input("Enter 1st movie :"))
 movies.append(input("Enter 2nd movie :"))
 movies.append(input("Enter 3rd movie :"))
 print(movies)
+
+#13WAP to check if a list contains a palindrome of elements. (Hint: use copy( ) method)
+list=[1,2,1]
+a=list.copy()
+a.reverse()
+
+if(list==a):
+    print("Palindrome")
+
+else:
+    print("Not Palindrome") 
+
+
+
+
+#14 WAP to count the number of students with the “A” grade in the following tuple.
+#[”C”,“D”,“A”,“A”,“B”,“B”,“A”]
+list=("A", "B", "A", "C", "A")
+a=list.count("A")  #print(list.count("A"))
+print(a)
+
+#15 Store the above values in a list & sort them from “A” to “D”
+list=["A", "C", "D", "B", "A"]
+list.sort()
+print(list)
