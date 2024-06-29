@@ -1,5 +1,8 @@
-print("Hello")
+
 #dictionary in python
-info ={
-    
+info = {
+    "key" : "value",
+    "name" : "Rohit",
+    "last name " : "Rai"
 }
+print(info)
