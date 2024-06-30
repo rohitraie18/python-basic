@@ -1,9 +1,4 @@
-list=[1,2,1]
-a=list.copy()
-a.reverse()
-
-if(list==a):
-    print("Palindrome")
-
-else:
-    print("Not Palindrome") 
+a=int(input("ENter 1st number :"))
+b=int(input("Enter 2nd number :"))
+sum=a+b
+print("The sum is :", sum)
