@@ -7,3 +7,4 @@ print("Enter 02 practice ")
 hello
 
 K XA 
+\HAINA
