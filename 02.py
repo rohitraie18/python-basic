@@ -5,3 +5,5 @@ print("The sum is :", sum)
 
 print("Enter 02 practice ")
 hello
+
+K XA 
