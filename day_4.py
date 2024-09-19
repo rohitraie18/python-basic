@@ -1,4 +1,4 @@
-"""
+
 #Create a simple line plot using Matplotlib
 import matplotlib.pyplot as plt
 x = [1, 2, 3, 4, 5] 
@@ -279,7 +279,7 @@ fig = px.scatter(tips, x='total_bill', y='tip',
 # Show the plot
 fig.show()
 
-"""
+
 
 
 import plotly.express as px
