@@ -36,11 +36,9 @@ plt.show()
 
 #Task 4: Create a customized line plot with labels for axes and a title.
 #Use x = [1, 2, 3, 4] and y = [10, 20, 25, 30] and add a title and labels for x-axis and y-axis.
-
 import matplotlib.pyplot as plt
 x = [1, 2, 3, 4]
 y = [10, 20, 25, 30]
-
 plt.plot(x, y, marker='o')
 plt.title("Line graph between X and Y")
 plt.xlable("X-axis")
@@ -48,34 +46,12 @@ plt.ylable("Y-axis")
 plt.show()
 
 
-
-
-import matplotlib.pyplot as plt
-x = [1, 2, 3, 4]
-y = [10, 20, 25, 30]
-
-plt.plot(x, y, marker='o')
-plt.title("Simple Line Plot")
-plt.xlabel("X-axis")
-plt.ylabel("Y-axis")
-plt.show()
-
-
-
-
 #Task 5: Create a bar chart with different colors for each bar.
 #Use categories = ['A', 'B', 'C', 'D'] and values = [5, 7, 3, 8].
 import matplotlib.pyplot as plt
-
-
-
-
-import matplotlib.pyplot as plt
-
 categories = ['A', 'B', 'C', 'D']
 values = [5, 7, 3, 8]
 colors = ["purple", "black", "brown", "pink"]
-
 plt.bar(categories, values, color =  colors)
 plt.title("Bar Chart")
 plt.xlabel("categories")
@@ -83,37 +59,27 @@ plt.ylabel("values")
 plt.show()
 
 
-
 #Task 6: Create a subplot with two charts:
 #One line plot for x = [1, 2, 3, 4] and y = [10, 20, 25, 30].
 #One bar chart for categories = ['A', 'B', 'C'] and values = [50, 70, 30]
 import matplotlib.pyplot as plt
-
 # Data for line plot
 x = [1, 2, 3, 4]
 y = [10, 20, 25, 30]
-
 # Data for bar chart
 categories = ['A', 'B', 'C']
 values = [50, 70, 30]
-
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
 ax1.plot(x, y, marker='+', color='blue')
-
 ax1.set_title('Line Plot')
 ax1.set_xlabel('X-axis')
 ax1.set_ylabel('Y-axis')
-
 ax2.bar(categories, values, color=['purple', 'pink', 'blue'])
 ax2.set_title('Bar Chart')
 ax2.set_xlabel('Categories')
 ax2.set_ylabel('Values')
-
 plt.tight_layout()
-
 plt.show()
-
-
 
 
 #Task 7: Create a pie chart to represent the percentage of students with grades A, B, C, and F.
@@ -121,10 +87,8 @@ plt.show()
 import matplotlib.pyplot as plt
 lables = ['A', 'B', 'C', 'F']
 sizes = [15, 30, 45, 10]
-
 colors = ['blue', 'purple', 'pink', 'green']
 explode = (0, 0.1, 0, 0)
-
 plt.pie(sizes, explode=explode, labels=lables, colors=colors, autopct='%1.1f%%', shadow=True, startangle=140)
 plt.axis('equal')
 plt.title("Pie Chart of Students percentage")
@@ -143,14 +107,11 @@ plt.ylabel("Y-axis")
 plt.show()
 
 
-
-
 #Task 9: Create a bar chart and customize the width and alignment of the bars.
 #Use categories = ['A', 'B', 'C', 'D'] and values = [5, 7, 3, 8].
 import matplotlib.pyplot as plt
 categories = ['A', 'B', 'C', 'D']
 values = [5, 7, 3, 8]
-
 plt.bar(categories, values, width=0.6, align='center', color='purple')
 plt.title("Bar Chart")
 plt.xlabel("categories")
@@ -158,51 +119,39 @@ plt.ylabel("values")
 plt.show()
 
 
-
 #Task 10: Create a figure with two subplots:
 #One plot shows a scatter plot of x = [1, 2, 3, 4] and y = [10, 20, 25, 30].
 #Another plot shows a pie chart for labels = ['A', 'B', 'C'] and sizes = [40, 30, 30].
-
-
 import matplotlib.pyplot as plt
 # Data for the scatter plot
 x = [1, 2, 3, 4]
 y = [10, 20, 25, 30]
-
 # Data for the pie chart
 labels = ['A', 'B', 'C']
 sizes = [40, 30, 30]
 colors = ['gold', 'yellowgreen', 'lightcoral']
-
 # Create a figure and two subplots
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
-
 # Scatter plot on the first subplot
 ax1.scatter(x, y, color='blue', marker='+')
 ax1.set_title('Scatter Plot')
 ax1.set_xlabel('X-axis')
 ax1.set_ylabel('Y-axis')
-
 # Pie chart on the second subplot
 ax2.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', shadow=True, startangle=140)
 ax2.set_title('Pie Chart')
-
 # Adjust layout to prevent overlap
 plt.tight_layout()
-
 # Show the plots
 plt.show()
 
 
-# 4.2
 #Task 1: Create a heatmap using Seaborn with the tips dataset.
 #Use sns.heatmap(tips.corr(), annot=True).
 import matplotlib.pyplot as plt
 import seaborn as sns
 from seaborn import load_dataset
-
 tips = load_dataset('tips')
-
 tips = tips.select_dtypes(include=['float64', 'int64'])
 plt.figure(figsize=(8,6))
 sns.heatmap(tips.corr(), annot=True, cmap='coolwarm', linewidths=0.5)
@@ -212,78 +161,102 @@ plt.show()
 
 #2 Create a pair plot using Seaborn with the tips dataset.
 #Use sns.pairplot(tips).
-
 import seaborn as sns
 import matplotlib.pyplot as plt
 from seaborn import load_dataset
-
 tips = sns.load_dataset('tips')
 sns.pairplot(tips, hue='sex', palette='husl')
 plt.title("Pair Plot")
 plt.show()
 
 
-
-
-
 #Task 3: Create a box plot of total_bill for each day using Seaborn.
 import matplotlib.pyplot as plt
 import seaborn as sns
 from seaborn import load_dataset
-
 tips = load_dataset('tips')
-
 plt.figure(figsize=(10, 10))
 sns.boxplot(x='day', y='total_bill', data=tips)
 plt.title('Box Plot')
 plt.show()
 
-"""
 
 #Task 4: Create an interactive line plot using Plotly to show temperature trends over a week.
 #Use days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'] and temperature = [15, 16, 17, 19, 20, 18, 17].
-"""
-
 import plotly.express as px
 import plotly.graph_objects as go
-
 # Temperature trends over a week in Kathmandu
 days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 temperature = [15, 16, 17, 19, 20, 18, 17]
-
 # Create a line plot using Plotly Express
 fig = px.line(x=days, y=temperature, title='Temperature Trends in Kathmandu')
-
 # Update axis labels
 fig.update_layout(xaxis_title='Days', yaxis_title='Temperature (°C)')
-
 # Show the plot
 fig.show()
-"""
 
 
-"""
 #Task 5: Create an interactive scatter plot using Plotly to visualize total_bill vs tip from the tips dataset.
 import plotly.express as px
 import seaborn as sns
-
 # Load the 'tips' dataset from Seaborn
 tips = sns.load_dataset('tips')
-
 # Create a scatter plot using Plotly Express
 fig = px.scatter(tips, x='total_bill', y='tip', 
                  title='Scatter Plot of Total Bill vs Tip',
                  labels={'total_bill': 'Total Bill ($)', 'tip': 'Tip ($)'}, 
                  hover_data=['sex', 'smoker', 'day', 'time', 'size'])
-
 # Show the plot
 fig.show()
 
 
+#Task 6: Create a customized box plot using Seaborn, and add a title.
+#Use the tips dataset.
+import seaborn as sns
+import matplotlib.pyplot as plt
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='day', y='total_bill', data=tips)
+plt.title('Customized Box Plot of Total Bill by Day')
+plt.show()
 
 
+#Task 7: Create an interactive pie chart using Plotly to represent the distribution of smoker and non-smoker in the tips dataset.
+#import plotly.express as px
+smoker_counts = tips['smoker'].value_counts()
+fig = px.pie(names=smoker_counts.index, values=smoker_counts.values, title='Distribution of Smokers and Non-Smokers')
+fig.show()
+#Task 8: Create an advanced interactive line plot using Plotly with hover information for days and temperature.
+import plotly.graph_objects as go
+days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+temperature = [15, 16, 17, 19, 20, 18, 17]
+fig = go.Figure(data=go.Scatter(x=days, y=temperature, mode='lines+markers',
+                                hovertemplate='Day: %{x}<br>Temperature: %{y}°C'))
+fig.update_layout(title='Temperature Trends Over a Week', xaxis_title='Day', yaxis_title='Temperature')
+fig.show()
+
+
+
+#Task 9: Create a Seaborn heatmap with custom color palette for the tips dataset.
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.colors import LinearSegmentedColormap, BoundaryNorm
+data = np.random.rand(10, 10)
+colors = ["red", "orange", "black", "blue", "pink", "skyblue", "violet", "brown", "purple", "green"]
+cmap = LinearSegmentedColormap.from_list("custom", colors, N=100)
+boundaries = [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+colors = ["pink", "white", "black", "green", "cyan"]
+cmap = LinearSegmentedColormap.from_list("custom", colors, N=len(colors))
+norm = BoundaryNorm(boundaries, cmap.N, clip=True)
+sns.heatmap(data, cmap=cmap, norm=norm)
+plt.show()
+
+
+#Task 10: Create a multi-panel interactive figure using Plotly that includes:
+#One panel with a scatter plot of total_bill vs tip,
+#Another panel with a pie chart showing the distribution of time (Lunch vs Dinner).
 import plotly.express as px
-
-
-fig = px.scatter(tips, x='total_bill', y='tip', title='Total Bill vs Tip')
+fig = px.scatter(tips, x='total_bill', y='tip', color='day', title='Scatter Plot of Total Bill vs Tip')
+fig.show()
+fig = px.pie(tips, names='time', title='Distribution of Time (Lunch vs Dinner)')
 fig.show()
