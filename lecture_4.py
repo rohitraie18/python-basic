@@ -55,3 +55,7 @@ new = {"city" : "PKR"} #  student.update({"city" : "KTM"})
  student.update(new)    #print(student)
 print(student)                       
 
+collection = { 1,2,3,2, "Hello", "hello"}
+print(collection)
+print(type(collection))
+print(len(collection))
