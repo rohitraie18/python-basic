@@ -1,4 +1,4 @@
-"""
+
 #Task 1
 import tensorflow as tf
 from tensorflow.keras import layers, models
@@ -20,7 +20,7 @@ model.summary()
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
-"""
+
 
 #Task 3
 from tensorflow.keras.datasets import mnist
