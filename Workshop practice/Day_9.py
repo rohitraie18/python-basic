@@ -1,7 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras import layers, models
 import matplotlib.pyplot as plt
-"""
 # Load the MNIST dataset
 mnist = tf.keras.datasets.mnist
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
@@ -17,7 +16,9 @@ train_images, test_images = train_images / 255.0, test_images / 255.0
 plt.imshow(train_images[0].reshape(28, 28), cmap='gray')
 plt.title(f'Label: {train_labels[0]}')
 plt.show()
-"""
+
+
+
 
 # Build the CNN model
 model = models.Sequential()
