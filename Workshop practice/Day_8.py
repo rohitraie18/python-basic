@@ -39,3 +39,26 @@ test_images = test_images.reshape((test_images.shape[0], 784))
 
 # Train the model
 history = model.fit(train_images, train_labels, epochs=5, validation_data=(test_images, test_labels))
+
+
+#task 5
+import matplotlib.pyplot as plt
+
+# Example training history data
+history = {
+    'loss': [0.6, 0.5, 0.4, 0.3, 0.2],  # Sample training loss values
+    'val_loss': [0.65, 0.55, 0.45, 0.35, 0.25],  # Sample validation loss values
+    'accuracy': [0.7, 0.75, 0.8, 0.85, 0.9],  # Sample training accuracy
+    'val_accuracy': [0.68, 0.72, 0.78, 0.83, 0.88]  # Sample validation accuracy
+}
+
+# Plotting the loss
+plt.figure(figsize=(10, 6))
+plt.plot(history['loss'], label='Training Loss')
+plt.plot(history['val_loss'], label='Validation Loss')
+plt.title('Training and Validation Loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.legend(loc='upper right')
+plt.grid(True)
+plt.show()
