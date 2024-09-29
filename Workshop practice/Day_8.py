@@ -1,4 +1,4 @@
-
+"""
 #Task 1
 import tensorflow as tf
 from tensorflow.keras import layers, models
@@ -20,7 +20,7 @@ model.summary()
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
-
+"""
 
 #Task 3
 from tensorflow.keras.datasets import mnist
@@ -39,6 +39,7 @@ test_images = test_images.reshape((test_images.shape[0], 784))
 
 # Train the model
 history = model.fit(train_images, train_labels, epochs=5, validation_data=(test_images, test_labels))
+
 
 
 #task 5
